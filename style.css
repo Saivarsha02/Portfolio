@@ -440,3 +440,18 @@ input:focus, textarea:focus{
   }
   .nav-toggle{ display:inline-flex; }
 }
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.hero-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(74,163,255,0.6);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
