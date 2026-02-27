@@ -354,9 +354,18 @@ h3{
 }
 
 /* ===== Portfolio layout fix (scoped to #projects only) ===== */
+/* Portfolio: force 2 columns on desktop */
 #projects .cards{
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 18px;
+}
+
+/* Portfolio: 1 column on mobile */
+@media (max-width: 920px){
+  #projects .cards{
+    grid-template-columns: 1fr;
+  }
 }
 
 #projects .card{
