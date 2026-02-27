@@ -203,79 +203,129 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Portfolio</h2>
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Portfolio</h2>
+    </div>
+
+    <div class="cards">
+
+      <!-- 1) CHILD CARE FORECASTING -->
+      <article class="card">
+        <h3>Child Care Staffing Forecasting & Scheduling</h3>
+        <p class="muted">
+          Forecast workforce demand using time-series modeling and machine learning to support data-driven staffing decisions.
+        </p>
+
+        <ul class="bullets">
+          <li>Built an end-to-end pipeline transforming attendance events into structured time-series datasets.</li>
+          <li>Compared GAM, Random Forest, and PyTorch models using backtesting and consistent evaluation metrics.</li>
+          <li>Delivered interactive reporting and decision-support insights for operational planning.</li>
+        </ul>
+
+        <div class="chips mt">
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+          <span class="chip">PyTorch</span>
+          <span class="chip">AWS</span>
+          <span class="chip">Power BI</span>
+          <span class="chip">Forecasting</span>
         </div>
 
-        <div class="cards">
-          <article class="card">
-            <h3>Child Care Staffing Forecasting & Scheduling</h3>
-            <p class="muted">Forecast workforce demand using time-series modeling and ML to support staffing decisions.</p>
-            <ul class="bullets">
-              <li>Built an end-to-end pipeline transforming attendance events into time-series datasets.</li>
-              <li>Compared GAM, Random Forest, and PyTorch models via backtesting and consistent metrics.</li>
-              <li>Delivered Power BI reporting + Streamlit app for interactive decision support.</li>
-            </ul>
-            <div class="chips mt">
-              <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">PyTorch</span>
-              <span class="chip">AWS</span><span class="chip">Power BI</span><span class="chip">Streamlit</span>
-            </div>
-            <div class="card-actions">
-  <a class="btn small" href="https://www.youtube.com/watch?v=420nKKjt4Cc" target="_blank" rel="noopener">YouTube Walkthrough</a>
-</div>
-          </article>
-
-          <article class="card">
-            <h3>Sales Analytics & BI Dashboards</h3>
-            <p class="muted">Business intelligence dashboards for performance tracking with scalable data modeling.</p>
-            <img class="card-img" src="salesdashboard.png" alt="Sales Analytics dashboard screenshot" />
-            <ul class="bullets">
-              <li>Designed analytics-ready datasets using SQL transformations and star-schema modeling.</li>
-              <li>Built semantic Power BI models with optimized DAX measures.</li>
-              <li>Automated refresh and reporting workflows for self-service analytics.</li>
-            </ul>
-            <div class="chips mt">
-              <span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">SQL</span>
-              <span class="chip">Data Modeling</span><span class="chip">ETL</span>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3>Customer Churn Prediction</h3>
-            <p class="muted">Predict churn using behavioral analytics and supervised learning with strong evaluation.</p>
-            <ul class="bullets">
-              <li>Performed EDA and feature engineering to identify churn-driving patterns.</li>
-              <li>Trained Logistic Regression and Random Forest; evaluated using ROC-AUC, Precision, Recall, F1.</li>
-              <li>Translated model outputs into actionable retention insights.</li>
-            </ul>
-            <div class="chips mt">
-              <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Scikit-learn</span>
-              <span class="chip">Classification</span>
-            </div>
-          </article>
-
-          <article class="card">
-  <h3>US Labor Statistics Explorer</h3>
-  <p class="muted">Interactive analytics app for exploring labor market trends with clean visuals and filters.</p>
-  <ul class="bullets">
-    <li>Built an interactive Streamlit dashboard to explore and compare labor indicators.</li>
-    <li>Designed clear visualizations and user-friendly navigation for fast insights.</li>
-    <li>Focused on clean data handling and reproducible analytics.</li>
-  </ul>
-  <div class="chips mt">
-    <span class="chip">Python</span><span class="chip">Streamlit</span><span class="chip">Data Visualization</span>
-  </div>
-  <div class="card-actions">
-    <a class="btn small" href="https://github.com/Saivarsha02/Semester_Project" target="_blank" rel="noopener">GitHub Repo</a>
-    <a class="btn small ghost" href="https://sreeprumbudurtools.streamlit.app/" target="_blank" rel="noopener">Live App</a>
-  </div>
-</article>
+        <div class="card-actions">
+          <a class="btn small" href="https://www.youtube.com/watch?v=420nKKjt4Cc" target="_blank" rel="noopener">
+            🎥 YouTube Walkthrough
+          </a>
         </div>
-      </div>
-    </section>
+      </article>
+
+
+      <!-- 2) SALES DASHBOARD -->
+      <article class="card">
+        <h3>Sales Analytics & BI Dashboards</h3>
+        <p class="muted">
+          Business intelligence dashboards for performance tracking using scalable star-schema data modeling.
+        </p>
+
+        <img
+          src="salesdashboard.png"
+          alt="Sales Analytics Dashboard Screenshot"
+          class="card-img"
+        />
+
+        <ul class="bullets">
+          <li>Designed analytics-ready relational datasets using SQL transformations.</li>
+          <li>Built optimized Power BI semantic models with DAX measures.</li>
+          <li>Improved performance and enabled repeatable self-service reporting.</li>
+        </ul>
+
+        <div class="chips mt">
+          <span class="chip">Power BI</span>
+          <span class="chip">DAX</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Star Schema</span>
+          <span class="chip">Data Modeling</span>
+        </div>
+      </article>
+
+
+      <!-- 3) CUSTOMER CHURN -->
+      <article class="card">
+        <h3>Customer Churn Prediction & Predictive Analytics</h3>
+        <p class="muted">
+          Built supervised learning models to identify churn-driving patterns and improve customer retention strategy.
+        </p>
+
+        <ul class="bullets">
+          <li>Performed exploratory data analysis and feature engineering.</li>
+          <li>Trained Logistic Regression and Random Forest models.</li>
+          <li>Evaluated performance using ROC-AUC, Precision, Recall, and F1-score.</li>
+        </ul>
+
+        <div class="chips mt">
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Scikit-learn</span>
+          <span class="chip">Classification</span>
+          <span class="chip">Model Evaluation</span>
+        </div>
+      </article>
+
+
+      <!-- 4) US LABOR STATISTICS -->
+      <article class="card">
+        <h3>US Labor Statistics Explorer</h3>
+        <p class="muted">
+          Interactive Streamlit application for exploring U.S. labor market indicators with clean visual insights.
+        </p>
+
+        <ul class="bullets">
+          <li>Built a structured analytics pipeline to process labor market datasets.</li>
+          <li>Designed interactive visualizations for trend exploration and comparison.</li>
+          <li>Focused on reproducible analytics and user-friendly dashboards.</li>
+        </ul>
+
+        <div class="chips mt">
+          <span class="chip">Python</span>
+          <span class="chip">Streamlit</span>
+          <span class="chip">Data Visualization</span>
+        </div>
+
+        <div class="card-actions">
+          <a class="btn small" href="https://github.com/Saivarsha02/Semester_Project/blob/main/README.md" target="_blank" rel="noopener">
+            💻 GitHub Repo
+          </a>
+          <a class="btn small ghost" href="https://sreeprumbudurtools.streamlit.app/" target="_blank" rel="noopener">
+            🚀 Live App
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
 
     <!-- PUBLICATIONS & ACHIEVEMENTS -->
     <section id="achievements" class="section">
