@@ -368,7 +368,44 @@ h3{
   gap: 10px;
   margin-top: 14px;
 }
+/* ===== Portfolio layout fix (scoped to #projects only) ===== */
+#projects .cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 18px;
+  align-items: start;
+}
 
+/* Make cards behave cleanly even with different content */
+#projects .card{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Make the bottom links align nicely */
+#projects .card-actions{
+  margin-top: auto; /* pushes buttons to bottom when present */
+  padding-top: 14px;
+}
+
+/* Sales screenshot styling (works for any card image) */
+#projects .card-img{
+  width: 100%;
+  height: 190px;     /* fixed height prevents layout explosion */
+  object-fit: cover; /* crops nicely */
+  border-radius: 14px;
+  margin: 14px 0 10px;
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.35);
+}
+
+/* Mobile: slightly smaller image */
+@media (max-width: 520px){
+  #projects .card-img{
+    height: 160px;
+  }
+}
 /* Contact */
 .contact-list{
   display:grid;
