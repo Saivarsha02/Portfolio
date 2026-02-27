@@ -402,7 +402,9 @@ h3{
 }
 
 .achievement-images img:hover{ transform: scale(1.02); }
-
+.achievement-images img{
+  background: rgba(255,255,255,0.04);
+}
 @media (max-width: 720px){
   .achievement-images{ grid-template-columns: 1fr; }
   .achievement-images img{ height: 200px; }
