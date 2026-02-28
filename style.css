@@ -504,3 +504,19 @@ input:focus, textarea:focus{
   }
   .nav-toggle{ display:inline-flex; }
 }
+/* Publications/Achievements: stack cards vertically so images have space */
+#publications .cards{
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+/* Make the FNBO images bigger when stacked */
+#publications .achievement-images img{
+  height: 320px;
+}
+
+@media (max-width: 720px){
+  #publications .achievement-images img{
+    height: 220px;
+  }
+}
