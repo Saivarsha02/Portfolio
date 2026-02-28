@@ -520,3 +520,26 @@ input:focus, textarea:focus{
     height: 220px;
   }
 }
+/* Stack layout for Publications & Services */
+.stacked-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Make FNBO images large & visible */
+#publications .achievement-images {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+#publications .achievement-images img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
