@@ -11,6 +11,6 @@ Hi 👋 I’m an AI Engineer and Data Engineer focused on building scalable, pro
 ---
 
 Want to know more about Sai Varsha, check these out or may contact me at :  
-🌐 Portfolio: https://your-portfolio-link.com  
+🌐 Portfolio: https://saivarsha02.github.io/Portfolio/
 🔗 LinkedIn: https://linkedin.com/in/varsha1024  
 📫 Email: sreeperumbudur24@gmail.com
